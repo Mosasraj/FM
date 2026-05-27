@@ -28,23 +28,23 @@ m= f / fm
 The circuits used to generate a frequency modulation must vary the frequency of a high frequency signal (carrier) as function of the amplitude of a low frequency signal (modulating signal). In practice there are two main methods used to generate FM.
 ## Algorithm
 1.	Define Parameters:
-•	Fs: Sampling frequency.
+•	Fs: Sampling frequency.\n
 •	T: Duration of the signal.
 •	Fc: Carrier frequency.
 •	Fm: Frequency of the modulating signal.
 •	Beta: Modulation index, which controls the extent of frequency deviation.
-2.	Generate Signals:
+3.	Generate Signals:
 •	Modulating signal: Sinusoidal signal used for modulation.
 •	Carrier signal: The high-frequency carrier signal.
 •	Modulated signal: FM modulated signal calculated by varying the carrier frequency according to the modulating signal.
-3.	FM Modulation:
+4.	FM Modulation:
 •	Modulated signal is obtained by modulating the carrier signal with the modulating signal.
  
-4.	FM Demodulation:
+5.	FM Demodulation:
 •	Differentiation: Computes the derivative of the modulated signal to extract frequency variations.
 •	Envelope Detection: Takes the absolute value to retrieve the envelope of the signal.
 •	Low-pass Filtering: Applies a Butterworth low-pass filter to smooth the envelope and recover the original modulating signal.
-5.	Visualization:
+6.	Visualization:
 •	Plots the modulating signal, carrier signal, FM modulated signal, and demodulated signal for analysis.
 
 
