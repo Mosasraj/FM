@@ -1,18 +1,18 @@
 # FM
 
-EXP NO: 4	GENERATION AND DETECTION OF FM
+## EXP NO: 4	GENERATION AND DETECTION OF FM
 
 
-AIM:
+## AIM:
 To write a program for Frequency Modulation and Demodulation using SCILAB and to observe and measure the frequency deviation and the modulation index of FM.
 
 
-EQUIPMENTS REQUIRED
+## EQUIPMENTS REQUIRED
 
 •	Computer with i3 Processor
 •	SCI LAB
 
-THEORY:
+## THEORY:
 
 Frequency modulation is a type of modulation in which the frequency of the high frequency (carrier) is varied in accordance with the instantaneous value of the modulating signal.
 FREQUENCY DEVIATION f and MODULATION INDEX m f :
@@ -23,9 +23,9 @@ We define modulation index m f the ratio between f and the modulating frequen
 m= f / fm
 
 
-FREQUENCY MODULATION GENERATION:
+## FREQUENCY MODULATION GENERATION:
 The circuits used to generate a frequency modulation must vary the frequency of a high frequency signal (carrier) as function of the amplitude of a low frequency signal (modulating signal). In practice there are two main methods used to generate FM.
-Algorithm
+## Algorithm
 1.	Define Parameters:
 •	Fs: Sampling frequency.
 •	T: Duration of the signal.
@@ -48,7 +48,7 @@ Algorithm
 
 
 
-PROCEDURE
+## PROCEDURE
 
 
 •	Refer Algorithms and write code for the experiment.
@@ -59,50 +59,51 @@ PROCEDURE
 •	If any Error, correct it in code and execute again
 Verify the generated waveform using Tabulation and Model Waveform
 
-MODEL GRAPH:
+## MODEL GRAPH:
 
 <img width="512" height="365" alt="image" src="https://github.com/user-attachments/assets/acd787bd-5281-4f1b-802f-1aa39fac9189" />
 
 
-Program
+## Program
 ```
-am = 6.9;
-fm = 424;
-ac = 13.8;
-fc = 4240;
-fs = 42400;
-beta = 5.3;
-t = 0:1/fs:3/fm;
-em = am*cos(2*3.14*fm*t);
-subplot(4,1,1);
-plot(t, em);
-ec = ac*cos(2*3.14*fc*t);
-subplot(4,1,2);
-plot(t, ec);
-efm = ac*cos(2*3.14*fc*t + beta*sin(2*3.14*fm*t));
-subplot(4,1,3);
-plot(t, efm);
-epm = ac*cos(2*3.14*fc*t + beta*cos(2*3.14*fm*t));
-subplot(4,1,4);
-plot(t, epm);
+Am=14.75
+fm=1965
+Ac=22.125
+fc=19650
+fs=196500
+t=0:1/fs:3/fm;
+B=5.3
+em=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,em);
+ec=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,ec);
+eFM=Ac*cos(2*3.14*fc*t+B*sin(2*3.14*fm*t));
+subplot(3,1,3);
+plot(t,eFM);
+
 ```
-Output Waveform
+## Output Waveform
 
-<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/75788334-ccbb-4d37-a251-f0f23b88967f" />
-
-
-Tabulation
-<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/53f8728c-810d-4daa-b871-182fe09ef4fb" />
+<img width="1728" height="1066" alt="image" src="https://github.com/user-attachments/assets/dcd80452-b1d5-49a6-9886-fe641441d1fa" />
 
 
 
+## Tabulation
+<img width="1600" height="934" alt="WhatsApp Image 2026-05-27 at 9 11 29 AM" src="https://github.com/user-attachments/assets/861f5db9-b095-4345-a9e0-ff3fd5e3ee58" />
 
 
 
 
+## Calculation :
+
+<img width="1196" height="1600" alt="WhatsApp Image 2026-05-27 at 9 11 58 AM" src="https://github.com/user-attachments/assets/1b72db48-e47b-40af-a165-cc03e729bc8f" />
 
 
-RESULT:
+
+
+## RESULT:
 
 Thus, the frequency modulation and demodulation is successfully done and the output is experimentally verified.
 
