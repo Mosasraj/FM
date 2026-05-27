@@ -10,6 +10,7 @@ To write a program for Frequency Modulation and Demodulation using SCILAB and to
 ## EQUIPMENTS REQUIRED
 
 •	Computer with i3 Processor
+
 •	SCI LAB
 
 ## THEORY:
